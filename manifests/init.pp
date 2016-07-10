@@ -14,7 +14,7 @@
 #   class { 'cron': }
 
 class cron (
-  $package_ensure = 'installed'
+  $package_ensure = 'installed',
   $service_config_path      = $cron::params::service_config_path,
   $service_config_template  = $cron::params::service_config_template,
   $cron_allow               = [],
